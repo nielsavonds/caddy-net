@@ -45,8 +45,8 @@ func activateTLS(cctx caddy.Context) error {
 			continue
 		}
 		cfg.TLS.Enabled = true
-		if certmagic.HostQualifies(cfg.Hostname) {
-			_, err := cfg.TLS.Manager.CacheManagedCertificate(cfg.Hostname)
+		if certmagic.HostQualifies(cfg.TLS.Hostname) {
+			_, err := cfg.TLS.Manager.CacheManagedCertificate(cfg.TLS.Hostname)
 			if err != nil {
 				return err
 			}
