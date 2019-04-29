@@ -2,7 +2,7 @@ package caddynet
 
 import (
 	// plug in the server
-	_ "github.com/pieterlouw/caddy-net/caddynet/netserver"
+	_ "github.com/nielsavonds/caddy-net/caddynet/netserver"
 	// // plug in the standard directives
-	_ "github.com/pieterlouw/caddy-net/caddynet/host"
+	_ "github.com/nielsavonds/caddy-net/caddynet/host"
 )
